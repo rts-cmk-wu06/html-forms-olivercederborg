@@ -1,0 +1,112 @@
+html,
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: whitesmoke;
+}
+
+.form-bg {
+  width: 50%;
+  background-color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  margin-top: 25%;
+  -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
+}
+
+.form-bg img {
+  height: 65px;
+  margin: 75px 0;
+}
+
+.form-bg input {
+  background: none;
+  border: none;
+  border-bottom: 3px solid #4b4b4b;
+  font-size: 1rem;
+  padding: 10px 10px;
+  margin: 0 5px;
+}
+
+.form-bg .login-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.form-bg button {
+  margin: 0 8px;
+  background-color: #fd4370;
+  -webkit-box-shadow: 0px 5px 15px 0px #fd437263;
+          box-shadow: 0px 5px 15px 0px #fd437263;
+  border: none;
+  color: white;
+  width: 165px;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.form-bg button:hover {
+  background-color: #f76e90;
+  color: white;
+}
+
+.form-bg .sign-up {
+  background-color: #e6e6e6;
+  color: #4b4b4b;
+  font-weight: 500;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-bg .login-action {
+  margin-top: 55px;
+  margin-bottom: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-bg .login-action .ekstra-links {
+  margin-top: 25px;
+}
+
+.form-bg .login-action .ekstra-links a {
+  padding: 0 5px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #5a5a5a;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+.form-bg .login-action .ekstra-links a:hover {
+  opacity: 0.65;
+}
+/*# sourceMappingURL=style.css.map */
