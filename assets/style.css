@@ -5,82 +5,50 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: whitesmoke;
+  scroll-behavior: smooth;
 }
 
-.form-bg {
-  width: 50%;
-  background-color: white;
-  text-align: center;
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+main.background {
+  height: 200vh;
+  background: -webkit-gradient(linear, right bottom, left top, from(#d34b6d), to(#ffb3b6));
+  background: linear-gradient(to left top, #d34b6d, #ffb3b6);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.form-bg {
+  min-width: 750px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.65)), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.5));
+  -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.075);
+          box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.075);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
-  margin-top: 25%;
-  -webkit-box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.05);
-}
-
-.form-bg img {
-  height: 65px;
-  margin: 75px 0;
-}
-
-.form-bg input {
-  background: none;
-  border: none;
-  border-bottom: 3px solid #4b4b4b;
-  font-size: 1rem;
-  padding: 10px 10px;
-  margin: 0 5px;
-}
-
-.form-bg .login-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  margin: auto;
+  z-index: 2;
 }
 
-.form-bg button {
-  margin: 0 8px;
-  background-color: #fd4370;
-  -webkit-box-shadow: 0px 5px 15px 0px #fd437263;
-          box-shadow: 0px 5px 15px 0px #fd437263;
-  border: none;
-  color: white;
-  width: 165px;
-  height: 40px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  -webkit-transition: all ease-in 0.2s;
-  transition: all ease-in 0.2s;
-}
-
-.form-bg button:hover {
-  background-color: #f76e90;
-  color: white;
-}
-
-.form-bg .sign-up {
-  background-color: #e6e6e6;
-  color: #4b4b4b;
-  font-weight: 500;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.form-bg .login-action {
-  margin-top: 55px;
-  margin-bottom: 75px;
+section.form-bg form {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,20 +61,112 @@ body {
           align-items: center;
 }
 
-.form-bg .login-action .ekstra-links {
-  margin-top: 25px;
+section.form-bg img {
+  height: 55px;
+  margin: 75px 0 50px;
 }
 
-.form-bg .login-action .ekstra-links a {
-  padding: 0 5px;
-  text-decoration: none;
-  font-weight: 400;
-  color: #5a5a5a;
+section.form-bg input {
+  background: none;
+  border: none;
+  border-bottom: 3px solid #5c5c66;
+  font-size: 1rem;
+  padding: 10px 10px;
+  margin: 15px 0;
+  width: 40%;
+  color: #1c1d22;
+}
+
+section.form-bg input::-webkit-input-placeholder {
+  color: #1c1d22;
+}
+
+section.form-bg input:-ms-input-placeholder {
+  color: #1c1d22;
+}
+
+section.form-bg input::-ms-input-placeholder {
+  color: #1c1d22;
+}
+
+section.form-bg input::placeholder {
+  color: #1c1d22;
+}
+
+section.form-bg .login-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section.form-bg button {
+  margin: 0 8px;
+  background-color: #fd4370;
+  -webkit-box-shadow: 0px 3px 12px 0px #fd437263;
+          box-shadow: 0px 3px 12px 0px #fd437263;
+  border: none;
+  color: white;
+  width: 165px;
+  height: 45px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
 }
 
-.form-bg .login-action .ekstra-links a:hover {
+section.form-bg button:hover {
+  background-color: #f76e90;
+  color: white;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+section.form-bg .sign-up {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #1c1d22;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+section.form-bg .sign-up:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #1c1d22;
+}
+
+section.form-bg .login-action {
+  margin-top: 55px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.form-bg .login-action .ekstra-links {
+  margin-top: 25px;
+}
+
+section.form-bg .login-action .ekstra-links a {
+  padding: 0 5px;
+  text-decoration: none;
+  font-weight: 400;
+  color: #1c1d22;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+
+section.form-bg .login-action .ekstra-links a:hover {
   opacity: 0.65;
 }
 /*# sourceMappingURL=style.css.map */

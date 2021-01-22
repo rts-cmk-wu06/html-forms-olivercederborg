@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>HTML Forms</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML Forms</title>
 
-   <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
-   <div class="form-bg">
-      <form action="">
-         <img src="./assets/logo_transparent.png" alt="logo">
-         <div>
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
-         </div>
-         <div class="login-action">
-            <div class="login-buttons">
-               <button>Login</button>
-               <button class="sign-up">Sign up</button>
-            </div>
-            <div class="ekstra-links">
-               <a href="#">Forgot Password?</a>
-            </div>
-         </div>
-      </form>
-   </div>
-</body>
+		<link rel="stylesheet" href="./assets/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<main class="background">
+			<section class="form-bg">
+				<form action="" method="POST">
+					<img src="./assets/logo_transparent.svg" alt="logo" />
+					<input type="text" placeholder="Username" />
+					<input type="password" placeholder="Password" />
+					<div class="login-action">
+						<div class="login-buttons">
+							<button type="submit">Login</button>
+							<button class="sign-up">Sign up</button>
+						</div>
+						<div class="ekstra-links">
+							<a href="#">Forgot Password?</a>
+						</div>
+					</div>
+				</form>
+			</section>
+		</main>
+	</body>
 </html>
