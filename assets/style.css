@@ -14,7 +14,7 @@ body {
 }
 
 main.background {
-  height: 200vh;
+  height: 100vh;
   background: -webkit-gradient(linear, right bottom, left top, from(#d34b6d), to(#ffb3b6));
   background: linear-gradient(to left top, #d34b6d, #ffb3b6);
   display: -webkit-box;
